@@ -354,7 +354,7 @@
           <repository>
               <id>github</id>
               <name>GitHub OpenX Apache Maven Packages</name>
-              <url>${git-hostname}/openx/@{project.artifactId}</url>
+              <url>${git-hostname}/openx/${project.artifactId}</url>
           </repository>
       </distributionManagement>
       <repositories>
