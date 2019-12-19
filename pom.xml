@@ -337,6 +337,31 @@
           </plugin>
         </plugins>
       </build>
+    </profile>	
+    <profile>
+      <id>github-repository</id>
+      <activation>
+          <property>
+              <name>useGitRepo</name>
+              <value>true</value>
+          </property>
+      </activation>
+      <properties>
+      </properties>
+      <distributionManagement>
+          <repository>
+              <id>github</id>
+              <name>GitHub OpenX Apache Maven Packages</name>
+              <url>${git-hostname}/openx/@{project.artifactId}</url>
+          </repository>
+      </distributionManagement>
+      <repositories>
+      	<repository>
+            <id>github</id>
+            <name>GitHub OpenX Apache Maven Packages</name>
+            <url>${git-hostname}/openx</url>
+        </repository>
+      </repositories>
     </profile>
   </profiles>
 </project>
