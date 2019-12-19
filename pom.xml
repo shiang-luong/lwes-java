@@ -22,6 +22,8 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <lwes.java.home>/usr/share/lwes-java</lwes.java.home>
+    <git-hostname>https://maven.pkg.github.com</git-hostname>
+    <hostname>http://artifactory.prod.gcp.openx.org</hostname>
   </properties>
 
   <scm>
