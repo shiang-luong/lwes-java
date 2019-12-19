@@ -19,7 +19,7 @@ jobs:
       
     - name: Deploy to Github Package Registry
       env:
-        GITHUB_USERNAME: x-access-token
+        GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run:
         mvn -e --settings mvn_settings.xml -Pgithub-repository deploy
